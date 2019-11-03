@@ -1,5 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
+body{
   background-color: bisque;
+  font-family:'Ubuntu', sans-serif;
+
+  .hide{
+    display: none!important;
+  }
 }
