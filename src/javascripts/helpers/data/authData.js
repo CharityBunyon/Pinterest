@@ -5,6 +5,7 @@ import 'firebase/auth';
 const authDiv = $('#auth');
 const stockDiv = $('#stock');
 const logoutNavbar = $('#navbar-button-logout');
+const boardsDiv = $('#boards');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -13,11 +14,13 @@ const checkLoginStatus = () => {
       stockDiv.removeClass('hide');
       logoutNavbar.removeClass('hide');
       authDiv.addClass('hide');
+      boardsDiv.removeClass('hide');
     } else {
       // nobody logged in SHOW auth component
       stockDiv.addClass('hide');
       logoutNavbar.addClass('hide');
       authDiv.removeClass('hide');
+      boardsDiv.addClass('hide');
     }
   });
 };

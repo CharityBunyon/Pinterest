@@ -3,8 +3,8 @@ import firebase from 'firebase';
 import auth from './components/Auth/auth';
 import authData from './helpers/data/authData';
 import myNavbar from './components/myNav/myNav';
-// import machine from './components/Machine/machine';
 import apiKeys from './helpers/apiKeys.json';
+import singleBoards from './components/singleBoards/singleBoard';
 
 import '../styles/main.scss';
 
@@ -14,6 +14,7 @@ const init = () => {
   authData.checkLoginStatus();
   auth.loginButton();
   myNavbar.logoutEvent();
+  singleBoards.showBoards();
   // machine.buildMachine();
 };
 

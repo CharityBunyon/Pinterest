@@ -1,0 +1,22 @@
+{
+  "board1": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Travel",
+    "isPrivate": false
+  },
+  "board2": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "My DIY",
+    "isPrivate": false
+  },
+  "board3": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Fashion",
+    "isPrivate": false
+  },
+  "board4": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Food",
+    "isPrivate": false
+  }
+}
