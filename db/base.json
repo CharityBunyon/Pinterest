@@ -1,6 +1,4 @@
 {
-  "users": "users",
   "boards": "boards",
-  "pins": "pins",
-  "categories": "categories"
+  "pins": "pins"
 }
