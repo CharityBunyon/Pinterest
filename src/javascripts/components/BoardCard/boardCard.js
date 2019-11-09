@@ -8,7 +8,7 @@ const makeABoard = (board) => {
     <h5 class="card-title">${board.name}</h5>
       <img src="${board.boardImg}" class="card-img-top" alt="...">
         <div class="card-body">
-          <button id="${board.id}" class="btn btn-primary">Click Me</button>
+          <button id="${board.id}" class="btn btn-primary chosen-board">Click Me</button>
         </div>
     </div>
     `;
