@@ -1,0 +1,17 @@
+{
+  "category1": {
+    "category": "fashion"
+    
+  },
+  "category2": {
+    "category": "food"
+
+  },
+  "category3": {
+    "category": "travel"
+
+  },
+  "category4": {
+    "category": "diy"
+  }
+}

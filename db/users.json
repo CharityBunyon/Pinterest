@@ -1,0 +1,22 @@
+{
+  "user1": {
+    "name": "Charity",
+    "profilePic": "",
+    "email": "charity@gmail.com",
+    "password": "password",
+    "description": "my interests",
+    "numOfFollowers": 10,
+    "numFollowing": 12,
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2"
+  },
+  "user2": {
+    "name": "Tyrone",
+    "profilePic": "",
+    "email": "ty@gmail.com",
+    "password": "password",
+    "description": "my pins",
+    "numOfFollowers": 50,
+    "numFollowing": 12,
+    "uid": "12345"
+  }
+}

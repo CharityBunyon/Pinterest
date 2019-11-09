@@ -1,0 +1,22 @@
+{
+  "board1": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Travel",
+    "boardImg": "https://unsplash.com/photos/AnLG86L_6nU"
+  },
+  "board2": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "My DIY",
+    "boardImg": "https://unsplash.com/photos/AnLG86L_6nU"
+  },
+  "board3": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Fashion",
+    "boardImg": "https://unsplash.com/photos/AnLG86L_6nU"
+  },
+  "board4": {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "name": "Food",
+    "boardImg": "https://unsplash.com/photos/AnLG86L_6nU"
+  }
+}

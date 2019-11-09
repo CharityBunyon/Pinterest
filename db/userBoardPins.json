@@ -1,0 +1,102 @@
+{
+  "userBoardPin1": {
+    "userId": "user1",
+    "pinId": "pin1",
+    "boardId": "board1"
+  },
+  "userBoardPin2": {
+    "userId": "user1",
+    "pinId": "pin2",
+    "boardId": "board1"
+  },
+  "userBoardPin3": {
+    "userId": "user1",
+    "pinId": "pin3",
+    "boardId": "board1"
+  },
+  "userBoardPin4": {
+    "userId": "user1",
+    "pinId": "pin4",
+    "boardId": "board1"
+  },
+  "userBoardPin5": {
+    "userId": "user1",
+    "pinId": "pin5",
+    "boardId": "board1"
+  },
+  "userBoardPin6": {
+    "userId": "user1",
+    "pinId": "pin6",
+    "boardId": "board2"
+  },
+  "userBoardPin7": {
+    "userId": "user1",
+    "pinId": "pin7",
+    "boardId": "board2"
+  },
+  "userBoardPin8": {
+    "userId": "user1",
+    "pinId": "pin8",
+    "boardId": "board2"
+  },
+  "userBoardPin9": {
+    "userId": "user1",
+    "pinId": "pin9",
+    "boardId": "board2"
+  },
+  "userBoardPin10": {
+    "userId": "user1",
+    "pinId": "pin10",
+    "boardId": "board2"
+  },
+  "userBoardPin11": {
+    "userId": "user1",
+    "pinId": "pin11",
+    "boardId": "board3"
+  },
+  "userBoardPin12": {
+    "userId": "user1",
+    "pinId": "pin12",
+    "boardId": "board3"
+  },
+  "userBoardPin13": {
+    "userId": "user1",
+    "pinId": "pin13",
+    "boardId": "board3"
+  },
+  "userBoardPin14": {
+    "userId": "user1",
+    "pinId": "pin14",
+    "boardId": "board3"
+  },
+  "userBoardPin15": {
+    "userId": "user1",
+    "pinId": "pin15",
+    "boardId": "board3"
+  },
+  "userBoardPin16": {
+    "userId": "user1",
+    "pinId": "pin16",
+    "boardId": "board4"
+  },
+  "userBoardPin17": {
+    "userId": "user1",
+    "pinId": "pin17",
+    "boardId": "board4"
+  },
+  "userBoardPin18": {
+    "userId": "user1",
+    "pinId": "pin18",
+    "boardId": "board4"
+  },
+  "userBoardPin19": {
+    "userId": "user1",
+    "pinId": "pin19",
+    "boardId": "board4"
+  },
+  "userBoardPin20": {
+    "userId": "user1",
+    "pinId": "pin20",
+    "boardId": "board4"
+  }
+}
