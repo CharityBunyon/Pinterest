@@ -13,7 +13,7 @@ const showBoards = (uid) => {
         domString += boardsPrint.makeABoard(board);
       });
       domString += '</div>';
-      utilities.printToDOM('boards', domString);
+      utilities.printToDom('boards', domString);
     })
     .catch((error) => console.error(error));
 };

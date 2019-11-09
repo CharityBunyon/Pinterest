@@ -29,7 +29,7 @@ const showSingleBoard = (e) => {
         domString += pinsPrint.makeAPin(pin);
       });
       domString += '</div>';
-      utilities.printToDOM('boards', domString);
+      utilities.printToDom('boards', domString);
       $('#boards').on('click', '.closeButton', close);
     })
     .catch((error) => console.error(error));
@@ -38,13 +38,13 @@ const showSingleBoard = (e) => {
 const buildAllBoard = (uid) => {
   boardsData.getBoards(uid)
     .then((boards) => {
-      console.log('here are the boards', boards);
+      console.log('the boards', boards);
       let domString = '<div id="boardSection" class="d-flex flex-wrap">';
       boards.forEach((board) => {
         domString += boardsPrint.makeABoard(board);
       });
       domString += '</div>';
-      utilities.printToDOM('boards', domString);
+      utilities.printToDom('boards', domString);
       $('#boards').on('click', '.boardCard', showSingleBoard);
     })
     .catch((error) => console.error(error));
