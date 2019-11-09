@@ -5,7 +5,6 @@ import 'firebase/auth';
 import monkeyBut from '../../../assets/images/dpiytaii5nezptwibem4.png';
 import utilities from '../../helpers/utilities';
 
-
 const signMeIn = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);

@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-import auth from './components/Auth/auth';
+import auth from './components/auth/auth';
 import authData from './helpers/data/authData';
 import myNavbar from './components/myNav/myNav';
 import apiKeys from './helpers/apiKeys.json';
