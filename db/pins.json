@@ -1,24 +1,28 @@
 {
   "pin1": {
     "title": "Angel Falls, Venezuela",
+    "description": "Angel Falls",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a087b743b471660a8da/master/w_770,c_limit/Angel-Falls-Venezuela_GettyImages-165513023.jpg",
     "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin2": {
     "title": "Drake Passage,",
+    "description": "Drake Passage",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a087b743b350a60a8d9/master/w_770,c_limit/Antarctica-_GettyImages-148815908.jpg",
     "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin3": {
     "title": "Antelope Canyon, Arizona",
+    "description": "Arizona",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a076b5c4d5dcc5ec14a/master/w_770,c_limit/Antelope-Canyon-AZ_GettyImages-164342990.jpg",
     "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin4": {
     "title": "Atacama Desert, Chile",
+    "description": "Chile",
     "imgUrl": "https://media.cntraveler.com/photos/5cb896b82721dd144b749295/master/w_770,c_limit/GettyImages-rh94-1911.jpg",
     "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
@@ -26,18 +30,21 @@
   },
   "pin5": {
     "title": "Arashiyama Bamboo Grove, Japan",
+    "description": "Japan",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a091a7e70293bf7094b/master/w_770,c_limit/Arashiyama-Japan_GettyImages-687644524.jpg",
     "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin6": {
     "title": "Artist Desk",
+    "description": "To Be or Not To Be An Artist",
     "imgUrl": "https://images.unsplash.com/photo-1522065893269-6fd20f6d7438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
     "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
   },
   "pin7": {
     "title": "Tools",
+    "description": "I need all the tools baby",
     "imgUrl": "https://images.unsplash.com/photo-1501360575895-3f3f2639fd74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
     "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
@@ -108,6 +115,7 @@
   },
   "pin17": {
     "title": "Cinnamon Swirl",
+    "description": "Good ole Cinnamon",
     "imgUrl": "https://images.unsplash.com/photo-1569305773791-7b9246c0db75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
     "siteUrl": "https://unsplash.com/photos/RZMUaO_f5NM",
     "boardId": "board4"
