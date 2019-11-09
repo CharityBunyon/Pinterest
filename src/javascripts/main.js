@@ -4,7 +4,7 @@ import auth from './components/auth/auth';
 import authData from './helpers/data/authData';
 import myNavbar from './components/myNav/myNav';
 import apiKeys from './helpers/apiKeys.json';
-import singleBoards from './components/singleBoards/singleBoard';
+// import singleBoards from './components/singleBoards/singleBoard';
 
 import '../styles/main.scss';
 
@@ -14,7 +14,7 @@ const init = () => {
   authData.checkLoginStatus();
   auth.loginButton();
   myNavbar.logoutEvent();
-  singleBoards.showBoards();
+  // singleBoards.showBoards();
   // machine.buildMachine();
 };
 
