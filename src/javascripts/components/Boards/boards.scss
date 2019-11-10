@@ -1,3 +1,21 @@
 #boards {
   display: block;
+  background-color: rgb(163, 163, 163);
+}
+.boardCard{
+  margin: 20px;
+}
+
+h5{
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 5px 5px 5px;
+}
+img {
+  padding: 10px;
+}
+
+.chosen-board {
+  // display: flex; 
+  // justify-content: center;
 }

@@ -5,10 +5,11 @@ const makeABoard = (board) => {
   if (board.id) {
     domString += `
     <div class="card boardCard">
-    <h5 class="card-title">${board.name}</h5>
-      <img src="${board.boardImg}" class="card-img-top" alt="...">
+    <h5 class="title">${board.name}</h5>
+      <img src="${board.boardImg}" class="cardImg" height="400px" width= "400px" alt="...">
         <div class="card-body">
           <button id="${board.id}" class="btn btn-primary chosen-board">Click Me</button>
+          <button href="#" class="btn btn-primary deleteBoard" id="board-${board.id}">Delete</button>
         </div>
     </div>
     `;
