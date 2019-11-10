@@ -13,7 +13,7 @@ const close = () => {
   const { uid } = firebase.auth().currentUser;
   $(document).click((e) => {
     const buttonName = e.target.className;
-    console.log(e.target.className);
+    // console.log(e.target.className);
     if (buttonName === 'closeBtn') {
       // eslint-disable-next-line no-use-before-define
       buildBoards(uid);
@@ -36,12 +36,12 @@ const showSingleBoard = (boardId) => {
     .catch((error) => console.error(error));
 };
 
-const deletePin = (e) => {
+const deleteAPin = (e) => {
   e.preventDefault();
   pinsData.deletePin(e.target.id)
     .then(() => {
-      // const boardId = e.target.getAttribute('pinDataBoardId');
-      // showSingleBoard(boardId);
+      const boardId = e.target.getAttribute('pinDataBoardId');
+      showSingleBoard(boardId);
       // eslint-disable-next-line no-use-before-define
     })
     .catch((error) => console.error(error));
@@ -63,7 +63,7 @@ const buildBoards = (uid) => {
       domString += '</div>';
       utilities.printToDom('boards', domString);
       $('#boards').on('click', '.chosen-board', createSingleBoard);
-      $('#boards').on('click', '.deletePin', deletePin);
+      $('#boards').on('click', '.deletePinFromBoard', deleteAPin);
 
       // boardsDiv.addClass('hide');
     })
