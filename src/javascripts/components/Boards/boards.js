@@ -13,11 +13,10 @@ const close = () => {
   const { uid } = firebase.auth().currentUser;
   $(document).click((e) => {
     const buttonName = e.target.className;
+    console.log(e.target.className);
     if (buttonName === 'closeBtn') {
       // eslint-disable-next-line no-use-before-define
       buildBoards(uid);
-      // $('#newBoardButton').removeClass('hide');
-      // $('#newPinButton').addClass('hide');
     }
   });
 };
@@ -25,8 +24,8 @@ const close = () => {
 const showSingleBoard = (boardId) => {
   pinsData.getPinsByBoardId(boardId)
     .then((pins) => {
-      console.log('here are the pins', pins);
-      let domString = '<div id="boardSection" class="d-flex flex-wrap"><span><button class=" btn btn-success btn-lg btn-block closeBtn">Close</button><span>';
+      // console.log('here are the pins', pins);
+      let domString = '<div id="boardSection" class="d-flex flex-wrap"><span><button class="closeBtn">Close</button><span>';
       pins.forEach((pin) => {
         domString += pinsPrint.makePin(pin);
       });
@@ -37,19 +36,26 @@ const showSingleBoard = (boardId) => {
     .catch((error) => console.error(error));
 };
 
+const deletePin = (e) => {
+  e.preventDefault();
+  pinsData.deletePin(e.target.id)
+    .then(() => {
+      // const boardId = e.target.getAttribute('pinDataBoardId');
+      // showSingleBoard(boardId);
+      // eslint-disable-next-line no-use-before-define
+    })
+    .catch((error) => console.error(error));
+};
+
 const createSingleBoard = (e) => {
   const boardId = e.target.id;
   showSingleBoard(boardId);
 };
 
-// const deleteBoard = () => {
-
-// };
-
 const buildBoards = (uid) => {
   boardData.getBoards(uid)
     .then((boards) => {
-      console.log('the boards', boards);
+      // console.log('the boards', boards);
       let domString = '<div id="boardSection" class="d-flex flex-wrap">';
       boards.forEach((board) => {
         domString += boardCard.makeABoard(board);
@@ -57,7 +63,7 @@ const buildBoards = (uid) => {
       domString += '</div>';
       utilities.printToDom('boards', domString);
       $('#boards').on('click', '.chosen-board', createSingleBoard);
-      // $('#pins').on('click', '.close', close);
+      $('#boards').on('click', '.deletePin', deletePin);
 
       // boardsDiv.addClass('hide');
     })
