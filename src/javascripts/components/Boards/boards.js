@@ -35,6 +35,21 @@ const showSingleBoard = (boardId) => {
     })
     .catch((error) => console.error(error));
 };
+const deleteABoard = (e) => {
+  e.preventDefault();
+  const { uid } = firebase.auth().currentUser;
+  const boardId = e.target.id.split('board-')[1];
+  boardData.deleteBoard(boardId)
+    .then(() => {
+      pinsData.getPinsByBoardId(boardId).then((pins) => {
+        pins.forEach((pin) => pinsData.deletePin(pin.id));
+      });
+      // eslint-disable-next-line no-use-before-define
+      buildBoards(uid);
+    })
+    .catch((error) => console.error(error));
+};
+
 
 const deleteAPin = (e) => {
   e.preventDefault();
@@ -63,7 +78,8 @@ const buildBoards = (uid) => {
       domString += '</div>';
       utilities.printToDom('boards', domString);
       $('#boards').on('click', '.chosen-board', createSingleBoard);
-      $('#boards').on('click', 'deletePinFromBoard', deleteAPin);
+      $('#boards').on('click', '.deletePinFromBoard', deleteAPin);
+      $('#boards').on('click', '.deleteBoard', deleteABoard);
     });
   // .catch((error) => console.error(error));
 };
