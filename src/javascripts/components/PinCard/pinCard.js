@@ -9,7 +9,7 @@ const makePin = (pin) => {
       <div class="card-body">
       <img src="${pin.imgUrl}" class="" height="400px" width= "400px" alt="...">
         <p class="card-text">${pin.description}</p>
-        <button href="#" class="btn btn-primary deletePin" id="${pin.id}" databoardid="${pin.boardID}">Delete</button>
+        <button href="#" class="btn btn-primary deletePinFromBoard" id="${pin.id}" pinDataBoardId="${pin.boardId}">Remove</button>
       </div>
     </div>
     `;
