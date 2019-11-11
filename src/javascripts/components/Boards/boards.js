@@ -63,12 +63,9 @@ const buildBoards = (uid) => {
       domString += '</div>';
       utilities.printToDom('boards', domString);
       $('#boards').on('click', '.chosen-board', createSingleBoard);
-      $('#boards').on('click', '.deletePinFromBoard', deleteAPin);
-
-      // boardsDiv.addClass('hide');
-    })
-    .catch((error) => console.error(error));
+      $('#boards').on('click', 'deletePinFromBoard', deleteAPin);
+    });
+  // .catch((error) => console.error(error));
 };
-
 
 export default { buildBoards };
