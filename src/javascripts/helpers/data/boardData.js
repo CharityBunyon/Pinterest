@@ -18,6 +18,31 @@ const getBoards = (uid) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const deleteBoard = (boardID) => axios.delete(`${baseUrl}/boards/${boardID}.json`);
+// const getAllBoardPositionsByMachineId = (uid) => new Promise((resolve, reject) => {
+//   axios.get(`${baseUrl}/boardPositions.json?orderBy="uid"&equalTo="${uid}"`)
+//     .then((response) => {
+//       const demBoardPositions = response.data;
+//       const boardPositions = [];
+//       Object.keys(demBoardPositions).forEach((fbId) => {
+//         demBoardPositions[fbId].id = fbId;
+//         boardPositions.push(demBoardPositions[fbId]);
+//       });
+//       resolve(boardPositions);
+//     })
+//     .catch((error) => reject(error));
+// });
 
-export default { getBoards, deleteBoard };
+
+// const createBoardPosition = (newBoardPosition) => axios.post(`${baseUrl}/boards.json`, newBoardPosition);
+
+const addBoard = (newBoard) => axios.post(`${baseUrl}/boards.json`, newBoard);
+
+const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
+
+export default {
+  getBoards,
+  deleteBoard,
+  addBoard,
+  // createBoardPosition,
+  // getAllBoardPositionsByMachineId,
+};
