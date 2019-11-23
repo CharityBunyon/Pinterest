@@ -25,13 +25,17 @@ const showSingleBoard = (boardId) => {
   pinsData.getPinsByBoardId(boardId)
     .then((pins) => {
       // console.log('here are the pins', pins);
-      let domString = '<div id="boardSection" class="d-flex flex-wrap"><span><button class="closeBtn">Close</button><span>';
+      let domString = '<div id="boardSection" class="container"><button class="closeBtn">Close</button>';
+      domString += `<button type="button" id="newPinBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pinModal">
+      Add New Pin
+    </button></div>`;
       pins.forEach((pin) => {
         domString += pinsPrint.makePin(pin);
       });
       domString += '</div>';
       utilities.printToDom('boards', domString);
       $('#boardSection').on('click', '.closeBtn', close);
+      $('#addNewPin').attr('pinBoardId', boardId);
     })
     .catch((error) => console.error(error));
 };
@@ -75,21 +79,38 @@ const addNewBoard = (e) => {
     boardImg: $('#boardImageUrl').val(),
     uid,
   };
-  console.log(newBoard);
   boardData.addBoard(newBoard)
     .then(() => {
       $('#exampleModal').modal('hide');
       // eslint-disable-next-line no-use-before-define
       buildBoards(uid);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => console.error(error));
+};
+
+
+const addNewPin = (e) => {
+  e.stopImmediatePropagation();
+  const boardId = e.target.getAttribute('pinBoardId');
+  const newPin = {
+    title: $('#pinTitle').val(),
+    imgUrl: $('#pinImgUrl').val(),
+    description: $('#pinDescription').val(),
+    boardId,
+  };
+  pinsData.addPin(newPin)
+    .then(() => {
+      $('#pinModal').modal('hide');
+      // eslint-disable-next-line no-use-before-define
+      showSingleBoard(boardId);
+    })
+    .catch((error) => console.error(error));
 };
 
 const buildBoards = (uid) => {
   boardData.getBoards(uid)
     .then((boards) => {
-      // console.log('the boards', boards);
-      let domString = `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      let domString = `<div class="container text-center" style="padding:50px"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
       Add Board
     </button>`;
       domString += '<div id="boardSection" class="d-flex flex-wrap">';
@@ -102,6 +123,7 @@ const buildBoards = (uid) => {
       $('#boards').on('click', '.deletePinFromBoard', deleteAPin);
       $('#boards').on('click', '.deleteBoard', deleteABoard);
       $('#addNewBoardBtn').click(addNewBoard);
+      $('#addNewPin').click(addNewPin);
     });
   // .catch((error) => console.error(error));
 };

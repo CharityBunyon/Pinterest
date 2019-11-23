@@ -3,28 +3,24 @@
     "title": "Angel Falls, Venezuela",
     "description": "Angel Falls",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a087b743b471660a8da/master/w_770,c_limit/Angel-Falls-Venezuela_GettyImages-165513023.jpg",
-    "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin2": {
     "title": "Drake Passage,",
     "description": "Drake Passage",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a087b743b350a60a8d9/master/w_770,c_limit/Antarctica-_GettyImages-148815908.jpg",
-    "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin3": {
     "title": "Antelope Canyon, Arizona",
     "description": "Arizona",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a076b5c4d5dcc5ec14a/master/w_770,c_limit/Antelope-Canyon-AZ_GettyImages-164342990.jpg",
-    "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin4": {
     "title": "Atacama Desert, Chile",
     "description": "Chile",
     "imgUrl": "https://media.cntraveler.com/photos/5cb896b82721dd144b749295/master/w_770,c_limit/GettyImages-rh94-1911.jpg",
-    "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
 
   },
@@ -32,21 +28,18 @@
     "title": "Arashiyama Bamboo Grove, Japan",
     "description": "Japan",
     "imgUrl": "https://media.cntraveler.com/photos/5cb63a091a7e70293bf7094b/master/w_770,c_limit/Arashiyama-Japan_GettyImages-687644524.jpg",
-    "siteUrl": "https://www.cntraveler.com/galleries/2015-11-27/the-50-most-beautiful-places-in-the-world",
     "boardId": "board1"
   },
   "pin6": {
     "title": "Artist Desk",
     "description": "To Be or Not To Be An Artist",
     "imgUrl": "https://images.unsplash.com/photo-1522065893269-6fd20f6d7438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
   },
   "pin7": {
     "title": "Tools",
     "description": "I need all the tools baby",
     "imgUrl": "https://images.unsplash.com/photo-1501360575895-3f3f2639fd74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-    "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
 
   },
@@ -54,91 +47,78 @@
     "title": "Hanging Leaf",
     "description": "Green hanging leaf decor.",
     "imgUrl": "https://images.unsplash.com/photo-1557674538-bd2a3adf4bcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80",
-    "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
   },
   "pin9": {
     "title": "Coffee & Chill",
     "description": "Coffee & Knit",
     "imgUrl": "https://images.unsplash.com/photo-1497105943914-b90d55145023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1270&q=80",
-    "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
   },
   "pin10": {
     "title": "Make Your Own Burger",
     "description": "Woman holding a burger tray.",
     "imgUrl": "https://images.unsplash.com/photo-1446611720526-39d16597055c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "siteUrl": "https://unsplash.com/photos/JE4iHJE-knI",
     "boardId": "board2"
   },
   "pin11": {
     "title": "Cabdy Girl",
     "description": "Cabdy Girl",
     "imgUrl": "https://images.unsplash.com/photo-1572295845436-e3b5d8eddc9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1265&q=80",
-    "siteUrl": "https://unsplash.com/photos/r1dkQYqUNGI",
     "boardId": "board3"
   },
   "pin12": {
     "title": "Miv Miv",
     "description": "Sneakers",
     "imgUrl": "https://images.unsplash.com/photo-1572435266176-f16718af4f9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/Gdu07bnowlE",
     "boardId": "board3"
   },
   "pin13": {
     "title": "Hot Day",
     "description": "Jo Jo",
     "imgUrl": "https://images.unsplash.com/photo-1557702841-51f68c345a82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-    "siteUrl": "https://unsplash.com/photos/4iIlP_138Sg",
     "boardId": "board3"
   },
   "pin14": {
     "title": "Blazer & France",
     "description": "Kelsey Dashmarie",
     "imgUrl": "https://images.unsplash.com/photo-1570578395468-8bf2683225f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/oxpOidNJLRc",
     "boardId": "board3"
   },
   "pin15": {
     "title": "Summer Fineee",
     "description": "Guy rocking hat and lip ring",
     "imgUrl": "https://images.unsplash.com/photo-1571820366255-84a6b21577a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80",
-    "siteUrl": "https://unsplash.com/photos/MpsL20xXDJk",
     "boardId": "board3"
   },
   "pin16": {
     "title": "Cherry Cake",
     "description": "Pretty please, with a cherry on top!",
     "imgUrl": "https://images.unsplash.com/photo-1569289522127-c0452f372d46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80",
-    "siteUrl": "https://unsplash.com/photos/HHebuDYjP4I",
     "boardId": "board4"
   },
   "pin17": {
     "title": "Cinnamon Swirl",
     "description": "Good ole Cinnamon",
     "imgUrl": "https://images.unsplash.com/photo-1569305773791-7b9246c0db75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/RZMUaO_f5NM",
     "boardId": "board4"
   },
   "pin18": {
     "title": "Rosewater Parfaits",
     "description": "Rose infused chia seeds.",
     "imgUrl": "https://images.unsplash.com/photo-1569305773791-7b9246c0db75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/AnLG86L_6nU",
     "boardId": "board4"
   },
   "pin19": {
     "title": "Almond Donuts",
     "description": "Almond and chocolate donuts.",
     "imgUrl": "https://images.unsplash.com/photo-1569132030134-7da0045b755b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/gqxSUgngBPA",
     "boardId": "board4"
   },
   "pin20": {
     "title": "Rice & Chicken",
     "description": "Hands holding bowl of food with rice and chicken.",
     "imgUrl": "https://images.unsplash.com/photo-1568093858174-0f391ea21c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    "siteUrl": "https://unsplash.com/photos/-Uca3SGlOag",
     "boardId": "board4"
   }
 } 

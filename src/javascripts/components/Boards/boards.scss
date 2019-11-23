@@ -15,7 +15,15 @@ img {
   padding: 10px;
 }
 
-.chosen-board {
-  // display: flex; 
-  // justify-content: center;
+.closeBtn{
+  background-color: burlywood;
+  margin: 50px;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid burlywood;
+}
+
+#pinCard{
+  margin: 50px 0px;
 }
