@@ -9,6 +9,36 @@ import boardCard from '../BoardCard/boardCard';
 import pinsData from '../../helpers/data/pinData';
 import pinsPrint from '../PinCard/pinCard';
 
+
+const updatePin = (pinId) => {
+  const { uid } = firebase.auth().currentUser;
+  const inputText = $('#pinType').val();
+  boardData.getBoards(uid)
+    .then((boards) => {
+      const selectedBoard = boards.find((x) => x.type.toLowerCase() === inputText.toLowerCase());
+      console.log(selectedBoard);
+      if (selectedBoard.type.toLowerCase() === inputText) {
+        pinsData.getPin(pinId).then(() => {
+          const newPin = {
+            boardId: selectedBoard.id,
+          };
+          pinsData.getPin(pinId, newPin.boardId).then(() => {
+            // eslint-disable-next-line no-use-before-define
+            showSingleBoard(newPin.boardId);
+          });
+        });
+      }
+    })
+    .catch((error) => console.error(error));
+};
+
+
+const updatePinEventListener = (e) => {
+  e.stopImmediatePropagation();
+  const pinId = e.target.id.split('updatePin-')[1];
+  updatePin(pinId);
+};
+
 const close = () => {
   const { uid } = firebase.auth().currentUser;
   $(document).click((e) => {
@@ -21,24 +51,7 @@ const close = () => {
   });
 };
 
-const showSingleBoard = (boardId) => {
-  pinsData.getPinsByBoardId(boardId)
-    .then((pins) => {
-      // console.log('here are the pins', pins);
-      let domString = '<div id="boardSection" class="container"><button class="closeBtn">Close</button>';
-      domString += `<button type="button" id="newPinBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pinModal">
-      Add New Pin
-    </button></div>`;
-      pins.forEach((pin) => {
-        domString += pinsPrint.makePin(pin);
-      });
-      domString += '</div>';
-      utilities.printToDom('boards', domString);
-      $('#boardSection').on('click', '.closeBtn', close);
-      $('#addNewPin').attr('pinBoardId', boardId);
-    })
-    .catch((error) => console.error(error));
-};
+
 const deleteABoard = (e) => {
   e.preventDefault();
   const { uid } = firebase.auth().currentUser;
@@ -54,22 +67,6 @@ const deleteABoard = (e) => {
     .catch((error) => console.error(error));
 };
 
-
-const deleteAPin = (e) => {
-  e.preventDefault();
-  pinsData.deletePin(e.target.id)
-    .then(() => {
-      const boardId = e.target.getAttribute('pinDataBoardId');
-      showSingleBoard(boardId);
-      // eslint-disable-next-line no-use-before-define
-    })
-    .catch((error) => console.error(error));
-};
-
-const createSingleBoard = (e) => {
-  const boardId = e.target.id;
-  showSingleBoard(boardId);
-};
 
 const addNewBoard = (e) => {
   e.stopImmediatePropagation();
@@ -105,6 +102,42 @@ const addNewPin = (e) => {
       showSingleBoard(boardId);
     })
     .catch((error) => console.error(error));
+};
+
+const showSingleBoard = (boardId) => {
+  pinsData.getPinsByBoardId(boardId)
+    .then((pins) => {
+      // console.log('here are the pins', pins);
+      let domString = '<div id="boardSection" class="container"><button class="closeBtn">Close</button>';
+      domString += `<button type="button" id="newPinBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pinModal">
+      Add New Pin
+    </button></div>`;
+      pins.forEach((pin) => {
+        domString += pinsPrint.makePin(pin);
+      });
+      domString += '</div>';
+      utilities.printToDom('boards', domString);
+      $('#boardSection').on('click', '.closeBtn', close);
+      $('#addNewPin').attr('pinBoardId', boardId);
+      $('#updatePinModal').on('click', '.updatePinBtn', updatePinEventListener);
+    })
+    .catch((error) => console.error(error));
+};
+
+const deleteAPin = (e) => {
+  e.preventDefault();
+  pinsData.deletePin(e.target.id)
+    .then(() => {
+      const boardId = e.target.getAttribute('pinDataBoardId');
+      showSingleBoard(boardId);
+      // eslint-disable-next-line no-use-before-define
+    })
+    .catch((error) => console.error(error));
+};
+
+const createSingleBoard = (e) => {
+  const boardId = e.target.id;
+  showSingleBoard(boardId);
 };
 
 const buildBoards = (uid) => {
