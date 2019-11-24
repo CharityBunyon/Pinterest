@@ -1,4 +1,5 @@
 {
   "boards": "boards",
-  "pins": "pins"
+  "pins": "pins",
+  "pinsOnBoard": "pinsOnBoard"
 }

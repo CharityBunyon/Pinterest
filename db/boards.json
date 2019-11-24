@@ -1,22 +1,22 @@
 {
   "board1": {
     "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
-    "name": "Travel",
+    "name": "travel",
     "boardImg": "https://images.unsplash.com/photo-1571942790878-b43e71f29476?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
   },
   "board2": {
     "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
-    "name": "My DIY",
+    "name": "my diy",
     "boardImg": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
   },
   "board3": {
     "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
-    "name": "Fashion",
+    "name": "fashion",
     "boardImg": "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
   },
   "board4": {
     "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
-    "name": "Food",
+    "name": "food",
     "boardImg": "https://images.unsplash.com/photo-1571942676558-281b2f9b1f8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80"
   }
 } 

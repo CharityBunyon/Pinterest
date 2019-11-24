@@ -1,0 +1,102 @@
+{
+  "pinsOnBoard1" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board1",
+    "pinId": "pin1"
+  },
+  "pinsOnBoard2" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board1",
+    "pinId": "pin2"
+  },
+  "pinsOnBoard3" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board1",
+    "pinId": "pin3"
+  },
+  "pinsOnBoard4" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board1",
+    "pinId": "pin4"
+  },
+  "pinsOnBoard5" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board1",
+    "pinId": "pin5"
+  },
+  "pinsOnBoard6" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board2",
+    "pinId": "pin6"
+  },
+  "pinsOnBoard7" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board2",
+    "pinId": "pin7"
+  },
+  "pinsOnBoard8" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board2",
+    "pinId": "pin8"
+  },
+  "pinsOnBoard9" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board2",
+    "pinId": "pin9"
+  },
+  "pinsOnBoard10" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board2",
+    "pinId": "pin10"
+  },
+  "pinsOnBoard11" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board3",
+    "pinId": "pin11"
+  },
+  "pinsOnBoard12" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board3",
+    "pinId": "pin12"
+  },
+  "pinsOnBoard13" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board3",
+    "pinId": "pin13"
+  },
+  "pinsOnBoard14" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board3",
+    "pinId": "pin14"
+  },
+  "pinsOnBoard15" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board3",
+    "pinId": "pin15"
+  },
+  "pinsOnBoard16" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board4",
+    "pinId": "pin16"
+  },
+  "pinsOnBoard17" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board4",
+    "pinId": "pin17"
+  },
+  "pinsOnBoard18" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board4",
+    "pinId": "pin18"
+  },
+  "pinsOnBoard19" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board4",
+    "pinId": "pin19"
+  },
+  "pinsOnBoard20" : {
+    "uid": "RbiqlzxPLDdFHqcbvjcql7U2TyR2",
+    "boardId": "board4",
+    "pinId": "pin20"
+  }
+}
