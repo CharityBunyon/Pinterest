@@ -5,45 +5,36 @@ import 'firebase/auth';
 import utilities from '../../helpers/utilities';
 import boardData from '../../helpers/data/boardData';
 import boardCard from '../BoardCard/boardCard';
-// import singleBoard from '../singleBoard/singleBoard';
 import pinsData from '../../helpers/data/pinData';
 import pinsPrint from '../PinCard/pinCard';
 
 
-const updatePin = (pinId) => {
+const updatePin = (e) => {
+  e.stopImmediatePropagation();
   const { uid } = firebase.auth().currentUser;
-  const inputText = $('#pinType').val();
-  boardData.getBoards(uid)
-    .then((boards) => {
-      const selectedBoard = boards.find((x) => x.type.toLowerCase() === inputText.toLowerCase());
-      console.log(selectedBoard);
-      if (selectedBoard.type.toLowerCase() === inputText) {
-        pinsData.getPin(pinId).then(() => {
-          const newPin = {
-            boardId: selectedBoard.id,
-          };
-          pinsData.getPin(pinId, newPin.boardId).then(() => {
-            // eslint-disable-next-line no-use-before-define
-            showSingleBoard(newPin.boardId);
-          });
-        });
-      }
-    })
-    .catch((error) => console.error(error));
+  const pinId = e.target.id.split('updatePin-')[1];
+  console.log(pinId);
+  const boardId = $('input[name=boardRadios]:checked').val();
+  console.log(boardId);
+  pinsData.getPin(pinId, boardId)
+    .then(() => {
+      $('#updatePinModal').modal('hide');
+    });
+  // eslint-disable-next-line no-use-before-define
+  buildBoards(uid);
 };
 
-
-const updatePinEventListener = (e) => {
-  e.stopImmediatePropagation();
-  const pinId = e.target.id.split('updatePin-')[1];
-  updatePin(pinId);
+const updatePinHandler = (e) => {
+  const pinId = e.target.id.split('pin-')[1];
+  console.log(pinId);
+  $('.saveUpdatePinButton').attr('id', `updatePin-${pinId}`);
 };
 
 const close = () => {
   const { uid } = firebase.auth().currentUser;
   $(document).click((e) => {
     const buttonName = e.target.className;
-    // console.log(e.target.className);
+    console.log(e.target.className);
     if (buttonName === 'closeBtn') {
       // eslint-disable-next-line no-use-before-define
       buildBoards(uid);
@@ -108,10 +99,9 @@ const showSingleBoard = (boardId) => {
   pinsData.getPinsByBoardId(boardId)
     .then((pins) => {
       // console.log('here are the pins', pins);
-      let domString = '<div id="boardSection" class="container"><button class="closeBtn">Close</button>';
-      domString += `<button type="button" id="newPinBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pinModal">
-      Add New Pin
-    </button></div>`;
+      // eslint-disable-next-line max-len
+      let domString = '<div id="boardSection" class="container text-center"><button class="closeBtn">Close</button> <button type="button" id="newPinBtn" class="btn btn-outline-dark" data-toggle="modal" data-target="#pinModal"> Add New Pin</button></div>';
+      domString += '<div class="container d-flex flex-wrap justify-content-between">';
       pins.forEach((pin) => {
         domString += pinsPrint.makePin(pin);
       });
@@ -119,7 +109,8 @@ const showSingleBoard = (boardId) => {
       utilities.printToDom('boards', domString);
       $('#boardSection').on('click', '.closeBtn', close);
       $('#addNewPin').attr('pinBoardId', boardId);
-      $('#updatePinModal').on('click', '.updatePinBtn', updatePinEventListener);
+      $('.updatePinButton').click(updatePinHandler);
+      $('#updatePinModal').on('click', '.saveUpdatePinButton', updatePin);
     })
     .catch((error) => console.error(error));
 };
@@ -143,15 +134,21 @@ const createSingleBoard = (e) => {
 const buildBoards = (uid) => {
   boardData.getBoards(uid)
     .then((boards) => {
-      let domString = `<div class="container text-center" style="padding:50px"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+      let domString = `<div class="text-center" style="padding:50px"><button type="button" class="btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#exampleModal">
       Add Board
     </button>`;
-      domString += '<div id="boardSection" class="d-flex flex-wrap">';
+      domString += '<div id="boardSection" class="container d-flex flex-wrap justify-content-between">';
       boards.forEach((board) => {
         domString += boardCard.makeABoard(board);
       });
+      let domString2 = '<div>';
+      boards.forEach((board) => {
+        domString2 += boardCard.boardRadioOptions(board);
+      });
       domString += '</div>';
+      domString2 += '</div>';
       utilities.printToDom('boards', domString);
+      utilities.printToDom('updatePinBoard', domString2);
       $('#boards').on('click', '.chosen-board', createSingleBoard);
       $('#boards').on('click', '.deletePinFromBoard', deleteAPin);
       $('#boards').on('click', '.deleteBoard', deleteABoard);

@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pinterest</title>
+  <title>Fadterest</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5d9186a566.js"></script>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img class='logo' src='./assets/images/0ab80a27997a38ee3b8c9722f63ea169--logo-creation-afro.jpg' alt='froLogo' /></a>
-    <a class="navbar-brand" href="#"><h1 class='brand'>Pinterest</h1></a>
+  <nav class="navbar navbar-expand-lg navbar-light mainNav">
+    <a class="navbar-brand" href="#"><i class="far fa-comments"></i>
+    <a class="navbar-brand" href="#"></a><h1 class='brand'>Fadterest</h1></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <button class="nav-link btn btn-danger hide" id="navbar-button-logout">Logout</button>
+          <button class="btn btn-dark hide logoutBTN" id="navbar-button-logout">Logout</button>
         </li>
       </ul>
     </div>
@@ -98,7 +99,32 @@
       </div>
     </div>
 
-    
+           <!-- Update Pin Modal -->
+           <div class="modal fade" id="updatePinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <form>
+                <div class="form-group" id="updatePinBoard">
+                </div>
+              </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary saveUpdatePinButton">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
 </body>
 </html>

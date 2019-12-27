@@ -8,9 +8,8 @@ import 'firebase/auth';
 const buildSingleBoard = (boardId) => {
   pinsData.getPinsByBoardId(boardId)
     .then((pins) => {
-      console.log('here are the pins', pins);
-      let domString = '<div id="boardSection" class="d-flex flex-wrap">';
-      domString += '<button class= "btn btn-success close">Close</button>';
+      let domString = '<div id="boardSection">';
+      domString += '<button class="closeBtn">Close</button>';
       pins.forEach((pin) => {
         domString += pinsPrint.makePin(pin);
       });
