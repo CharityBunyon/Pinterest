@@ -24,21 +24,20 @@ const addPin = (newPin) => axios.post(`${baseUrl}/pins.json`, newPin);
 
 const deletePin = (pinsId) => axios.delete(`${baseUrl}/pins/${pinsId}.json`);
 
-// axios call to edit the pin info in firebase
-
-const updatePin = (pinsID, newPinBoard) => axios.put(`${baseUrl}/pins/${pinsID}.json`, newPinBoard);
-
+const updateNewPin = (pinsId, newPinBoard) => axios.put(`${baseUrl}/pins/${pinsId}.json`, newPinBoard);
 
 const getPin = (pinsId, newBoardId) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/pins/${pinsId}.json`)
     .then((result) => {
       const pinObject = result.data;
       pinObject.boardId = newBoardId;
-      updatePin(pinsId, pinObject);
+      updateNewPin(pinsId, pinObject);
       resolve();
     })
     .catch((error) => reject(error));
 });
+// axios call to edit the pin info in firebase
+
 
 // 1. Function will grab all the pins from the firebase pins.json file.
 // 2. Within the .then I want to put the result in variable called pinObject.
@@ -50,5 +49,6 @@ export default {
   getPinsByBoardId,
   deletePin,
   addPin,
+  updateNewPin,
   getPin,
 };

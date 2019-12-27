@@ -1,8 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
 body{
-  background-color:#cc5500;
+  background-image: url("https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
   font-family:'Ubuntu', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 
   .hide{
     display: none!important;
@@ -10,6 +13,14 @@ body{
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.mainNav{
+  background-color: #9a7b4f;
+}
+
+.logoutBTN{
+  color: #fff;
 }
