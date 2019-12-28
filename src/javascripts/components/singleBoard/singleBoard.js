@@ -17,7 +17,6 @@ const buildSingleBoard = (boardId) => {
       utilities.printToDom('pins', domString);
     })
     .catch((error) => console.error(error));
-  // $('#pins').on('click', '.closeButton', hideBoards);
 };
 
 

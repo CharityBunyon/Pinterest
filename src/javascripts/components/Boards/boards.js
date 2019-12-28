@@ -13,9 +13,7 @@ const updatePin = (e) => {
   e.stopImmediatePropagation();
   const { uid } = firebase.auth().currentUser;
   const pinId = e.target.id.split('updatePin-')[1];
-  console.log(pinId);
   const boardId = $('input[name=boardRadios]:checked').val();
-  console.log(boardId);
   pinsData.getPin(pinId, boardId)
     .then(() => {
       $('#updatePinModal').modal('hide');
@@ -26,7 +24,6 @@ const updatePin = (e) => {
 
 const updatePinHandler = (e) => {
   const pinId = e.target.id.split('pin-')[1];
-  console.log(pinId);
   $('.saveUpdatePinButton').attr('id', `updatePin-${pinId}`);
 };
 
@@ -34,7 +31,6 @@ const close = () => {
   const { uid } = firebase.auth().currentUser;
   $(document).click((e) => {
     const buttonName = e.target.className;
-    console.log(e.target.className);
     if (buttonName === 'closeBtn') {
       // eslint-disable-next-line no-use-before-define
       buildBoards(uid);

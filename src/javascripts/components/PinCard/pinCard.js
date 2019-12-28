@@ -17,7 +17,6 @@ const makePin = (pin) => {
           </div>
       </div>
     </div>
-
 `;
   }
   return domString;
