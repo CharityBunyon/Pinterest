@@ -14,7 +14,7 @@ Fadterest is a Pinterest-inspired application that allows users to create boards
 
 ## Screenshots
 Display on page load
-![on load]()
+![on load](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/On%20Load.png)
 
 Logged in display (All Boards View)
 ![logged in]()
@@ -23,7 +23,7 @@ Single Board View
 ![single board]()
 
 Single Pin View
-![single pin]()
+![single pin](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Single%20Pin.png)
 
 Add Pin
 ![create pin]()
