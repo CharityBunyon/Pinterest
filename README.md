@@ -17,19 +17,19 @@ Display on page load
 ![on load](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/On%20Load.png)
 
 Logged in display (All Boards View)
-![logged in]()
+![logged in](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Log%20In.png)
 
 Single Board View
-![single board]()
+![single board](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Single%20Board.png)
 
 Single Pin View
 ![single pin](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Single%20Pin.png)
 
 Add Pin
-![create pin]()
+![create pin](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Add%20Pin.png)
 
 Edit Pin
-![edit pin]()
+![edit pin](https://raw.githubusercontent.com/CharityBunyon/Pinterest/master/src/assets/images/Edit%20Pin.png)
 
 
 
