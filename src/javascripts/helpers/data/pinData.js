@@ -37,8 +37,6 @@ const getPin = (pinsId, newBoardId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 // axios call to edit the pin info in firebase
-
-
 // 1. Function will grab all the pins from the firebase pins.json file.
 // 2. Within the .then I want to put the result in variable called pinObject.
 // 3. Then I want make a newBoardId by grabbing the pinObject and the boardId
